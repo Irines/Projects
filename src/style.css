@@ -1,0 +1,228 @@
+/* HEADER STYLES */
+@import url('//fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+html {
+  margin: 0;
+  --pink: rgb(255, 38, 103);
+  --grey:  rgb(224, 224, 224);
+  --greyText: rgb(165, 165, 165);
+  height: 100%;
+  color: var(--greyText);
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.media-body p{
+  margin-bottom: 0;
+}
+#headerContent .media {
+  padding-left: 10%;
+  box-shadow: 0 8px 10px 0px rgb(243, 243, 243);;
+}
+#headerContent .media-body {
+  color: var(--greyText);
+  font-weight: bold;
+  font-size: 1em;
+  padding: 14px 0;
+}
+.App .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* MAIN CONTENT */
+
+#mainContent{
+  padding-top: 2%;
+  color: var(--greyText);
+  /* max-height: 50%; */
+}
+
+/* TABS */
+.active_tab {
+  border-bottom-style: solid;
+  border-bottom-color: var(--pink);
+}
+
+.nav .nav-item a{
+  /* text-align: center; */
+  color: var(--greyText);
+}
+
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.fade{
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@keyframes fade{
+  from {opacity: 0.7;}
+  to {opacity: 1;}
+}
+
+#tabs {
+  position:relative;
+}
+
+.leftPart .container {
+  position:absolute;
+  top: 5em;
+  left: 5em;
+}
+
+.leftPart .btn {
+  background-color: var(--pink);
+  border: none;
+  color:white;
+  border-radius: 6px;
+  padding: 0.3em 1.6em;
+}
+.leftPart .btn:hover {
+  background-color: var(--pink);
+  border: none;
+  color:white;
+  border-radius: 6px;
+  padding: 0.3em 1.6em;
+}
+.leftPart .btn:focus {
+  box-shadow: 0px 4px 4px var(--grey) ;
+}
+#tabsColumn {
+  border-right-style: solid;
+  border-right-color:var(--grey);
+  padding: 0;
+  /* max-height: 50%; */
+}
+/* RIGHT PART */
+#rightContent {
+  padding-right: 5%;
+  padding-left: 2%;
+  height: 100%;
+}
+#rowContainer{
+  /* padding-top to fix bug with the 1st completed div */
+  /* CONTAINER FOR TaskComponents AND MAKES SCROLLBAR */
+  padding-top: 1em;
+  max-height: 40%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* #rowContainer col {
+  max-height: 40%;
+  overflow-y: auto;
+} */
+
+#rightContent h5 {
+  color:black;
+  font-weight: 600;
+}
+
+#businessColumn{
+  /* margin-right: 10px; */
+  padding-right: 10em;
+}
+.colsAlign {
+  text-align: center;
+}
+
+.colsAlign > h6 {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  font-weight: 600;
+  color: black;
+}
+
+form textarea {
+  resize: none;
+  background-color: var(--grey);
+  border: 0px;
+  width: inherit;
+  height: 6em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+}
+form textarea:focus {
+  outline-color: var(--greyText);
+}
+
+.assignments{
+  color:black;
+  border-right-style: solid;
+  border-right-color:var(--grey);
+  position: relative;
+  /* margin-top: 1%; */
+  /* padding-top: 1.2em; */
+  padding-bottom: 1em;
+}
+.partContainer .mr-3, .mx-3 {
+    margin-right: 0.5rem!important;
+
+}
+
+.partContainer {
+  position: relative;
+}
+
+/* ICON */
+
+.icon {
+  position: absolute;
+  display: block;
+  right: -18px;
+  top: -3px;
+  width: 35px;
+  height: 35px;
+  padding: 2px 5px;
+  background-color: white;
+  border:1px solid var(--grey);
+  border-radius: 50%;
+}
+
+/* CALENDAR */
+
+.showCalendar {
+  display: inline-block;
+}
+
+.timeselect {
+  margin-left: 1em;
+}
+
+.datepickericonAll {
+  margin-right: 0.5em;
+  margin-bottom: 0.2em;
+}
+.dateContainer > label {
+  margin-bottom: 0;
+}
+.executions{
+  position: absolute;
+  top: -3em;
+  left: 0.5em;
+}
+
+.executions > div, .executions > label, .executions .form-control{
+  margin-bottom: 0.7em;
+}
+
+.selectDiv{
+  margin-right: 1em;
+}
+#accessId {
+  /* margin-left: 1.5em; */
+  margin-right: 0.2em;
+  margin-bottom: 8px;
+}
+
+.access > div{
+  display: inline-block;
+}
